@@ -31,17 +31,20 @@ If you prefer to run the Invoice Management System locally on your machine, foll
 5. Open your web browser and visit http://localhost:3000/ to access the Invoice Management System.
 
 # Features:
-### View Invoices:
-Users can easily view a list of their invoices with essential details like invoice number, name, and total amount.
-### Edit Invoices:
-Users have the ability to edit existing invoices to make updates or corrections to client details, itemized services, prices, or quantities.
+**View Invoices**: 
+- Users can easily view a list of their invoices with essential details like invoice number, name, and total amount.
 
-### Delete Invoices:
-Users can delete invoices that are no longer needed, helping them maintain a clean and organized.
-### Copy Invoices:
-Application allows users to create duplicate copies of invoices, making it convenient for recurring invoices.
-### Download PDF Invoices:
-Users can generate and download PDF versions of their invoices, which are commonly used for sharing with clients and for record-keeping.
+**Edit Invoices**:
+- Users have the ability to edit existing invoices to make updates or corrections to client details, itemized services, prices, or quantities.
+
+**Copy Invoices**:
+- Application allows users to create duplicate copies of invoices, making it convenient for recurring invoices.
+
+**Delete Invoices**:
+- Users can delete invoices that are no longer needed, helping them maintain a clean and organized.
+
+**Download PDF Invoices**:
+- Users can generate and download PDF versions of their invoices, which are commonly used for sharing with clients and for record-keeping.
 
 # Project Directory Structure
 ![Project Directory Structure](images/project_structure.png)
