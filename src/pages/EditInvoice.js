@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
-import Container from 'react-bootstrap/Container';
-
-import InvoiceForm from "../components/InvoiceForm"
 import { useSelector } from "react-redux"
+import Container from "react-bootstrap/Container"
+import InvoiceForm from "../components/InvoiceForm"
+
 const EditInvoice = () => {
   const { id } = useParams()
   const [invoice, setInvoice] = useState(null)
@@ -18,11 +18,11 @@ const EditInvoice = () => {
   return (
     <div className='d-flex flex-column align-items-center justify-content-center w-100'>
       <Container>
-      {invoice ?
-        <InvoiceForm invoice={invoice} />
-        :
-        <div>No Invoice with id: {id}</div>
-      }
+        {invoice ?
+          <InvoiceForm invoice={invoice} />
+          :
+          <div>No Invoice with id: {id}</div>
+        }
       </Container>
     </div>
   )

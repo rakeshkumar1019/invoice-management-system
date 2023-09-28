@@ -1,14 +1,12 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {Row, Col,Button,Modal} from "react-bootstrap"
 import { BiPaperPlane, BiCloudDownload } from "react-icons/bi";
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf'
-import { useDispatch } from 'react-redux';
 import {addInvoice,editInvoice} from "../features/invoiceSlice"
 import ShowInvoiceDetails from './ShowInvoiceDetails';
-import { useNavigate } from 'react-router-dom';
-
 
 function GenerateInvoice() {
   html2canvas(document.querySelector("#invoiceCapture")).then((canvas) => {

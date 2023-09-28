@@ -1,13 +1,14 @@
 import React from 'react'
-import {useSelector} from "react-redux"
-import InvoiceList from '../components/InvoiceList'
+import { useSelector } from "react-redux"
 import { Link } from 'react-router-dom'
-import {Container, Button} from "react-bootstrap"
+import { Container, Button } from "react-bootstrap"
+import InvoiceList from '../components/InvoiceList'
+
 const Home = () => {
-  const invoices = useSelector((state)=>state.invoices)
+  const invoices = useSelector((state) => state.invoices)
   return (
     <div className="d-flex flex-column align-items-center w-100">
-       <Container className="mt-5 mb-5">
+      <Container className="mt-5 mb-5">
         <div className='d-flex justify-content-between'>
           <div className='mb-3'>
             <h1>Invoices</h1>
@@ -21,8 +22,8 @@ const Home = () => {
             </Link>{' '}
           </div>
         </div>
-        <InvoiceList invoices={invoices}/>
-    </Container>
+        <InvoiceList invoices={invoices} />
+      </Container>
     </div>
   )
 }

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Table, Dropdown, Button } from 'react-bootstrap';
-import { deleteInvoice, copyInvoice } from "../features/invoiceSlice"
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
+import { deleteInvoice, copyInvoice } from "../features/invoiceSlice"
 import '../App.css';
 
 const InvoiceList = ({ invoices }) => {
@@ -34,7 +34,6 @@ const InvoiceList = ({ invoices }) => {
     }
     dispatch(copyInvoice({ id: invoice?.info?.invoiceNumber, invoice: newInvoice }))
   }
-
 
   return (
     <>
@@ -130,7 +129,6 @@ const InvoiceList = ({ invoices }) => {
       }
     </>
   );
-
 };
 
 export default InvoiceList;

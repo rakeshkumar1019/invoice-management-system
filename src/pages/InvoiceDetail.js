@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom';
-import ShowInvoiceDetails from '../components/ShowInvoiceDetails';
 import { useSelector } from 'react-redux';
 import { Button } from 'react-bootstrap';
+import ShowInvoiceDetails from '../components/ShowInvoiceDetails';
 import "../App.css"
 const InvoiceDetail = () => {
   const { id } = useParams();
@@ -30,7 +30,6 @@ const InvoiceDetail = () => {
           </Button>
         </Link>{' '}
       </div>
-
       {invoice ?
         <ShowInvoiceDetails invoice={invoice} />
         :
@@ -41,11 +40,8 @@ const InvoiceDetail = () => {
           </h2>
         </div>
       }
-
     </div>
   )
-
-
 }
 
 export default InvoiceDetail
