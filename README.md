@@ -49,8 +49,3 @@ If you prefer to run the Invoice Management System locally on your machine, foll
 # Project Directory Structure
 ![Project Directory Structure](images/project_structure.png)
 
-
-# Details
-**Author:** Rakesh Kumar Singh 
-
-**Resume:** [Download Resume](https://drive.google.com/file/d/1SoQq8S-rKmivqdJhSBbEMi5w3XCSAT2q/view?usp=sharing)
